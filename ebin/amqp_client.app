@@ -1,7 +1,12 @@
+
 {application, amqp_client,
  [{description, "RabbitMQ AMQP Client"},
   {vsn, "0.0.0"},
   {modules, [
+             amqp_channel_sup,
+             amqp_channel_sup_sup,
+             amqp_connection_sup,
+             amqp_connection_type_sup,
              amqp_channel,
              amqp_channel_util,
              amqp_connection,
